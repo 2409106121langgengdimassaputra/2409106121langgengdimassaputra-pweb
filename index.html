@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Up UC PUBG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Top Up UC PUBG</h1>
+    <button id="dark-toggle" class="btn">Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="paket">
+      <h2>Pilih Paket UC</h2>
+      <div class="paket-grid">
+        <article class="card">
+          <h3>Paket Kecil — 60 UC</h3>
+          <p>Harga: Rp 15.000</p>
+          <button class="btn btn-primary btn-pilih" data-value="60">Pilih</button>
+        </article>
+
+        <article class="card">
+          <h3>Paket Medium — 300 UC</h3>
+          <p>Harga: Rp 75.000</p>
+          <button class="btn btn-primary btn-pilih" data-value="300">Pilih</button>
+        </article>
+
+        <article class="card">
+          <h3>Paket Besar — 620 UC</h3>
+          <p>Harga: Rp 150.000</p>
+          <button class="btn btn-primary btn-pilih" data-value="620">Pilih</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="form-topup">
+      <h2>Form Top Up</h2>
+      <form>
+        <label for="user-id">User ID PUBG:</label>
+        <input type="text" id="user-id" placeholder="Masukkan User ID">
+
+        <label for="paket">Paket UC:</label>
+        <select id="paket">
+          <option value="">-- Pilih Paket --</option>
+          <option value="60">60 UC</option>
+          <option value="300">300 UC</option>
+          <option value="620">620 UC</option>
+        </select>
+
+        <label for="metode">Metode Pembayaran:</label>
+        <select id="metode">
+          <option value="">-- Pilih Metode --</option>
+          <option value="Dana">Dana</option>
+          <option value="Gopay">Gopay</option>
+          <option value="Transfer Bank">Transfer Bank</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary">Top Up Sekarang</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Top Up UC PUBG</p>
+    <p id="kurs">Memuat kurs...</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
